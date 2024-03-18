@@ -31,7 +31,7 @@ const registerController = async (req, res) => {
     } catch (error) {
         return res.status(500).send({
             status: false,
-            message: `Error in registe API : ${error}`,
+            message: `Error in register API : ${error}`,
             error
         });
     }
@@ -72,7 +72,7 @@ const loginController = async (req, res) => {
     } catch (error) {
         return res.status(500).send({
             status: false,
-            message: `Error in register API : ${error}`,
+            message: `Error in login API : ${error}`,
             error
         });
     }

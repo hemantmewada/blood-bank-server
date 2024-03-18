@@ -26,9 +26,14 @@ const inventorySchema = new mongoose.Schema({
             return this.inventoryType == "out";
         }
     },
+    email: {
+        type: String,
+        required: function (){
+            return this.inventoryType == "in";
+        }
+    },
     donar: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "users",
         required: function (){
             return this.inventoryType == "in";
         }
